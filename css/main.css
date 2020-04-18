@@ -145,7 +145,6 @@ body
 .posts__curtidas
 {
     display: flex;
-    align-content: center;
     background-color:  rgb(238, 236, 236);
     padding: .875em .375em .375em .375em;
     height: 5.1em;
@@ -154,6 +153,7 @@ body
 {
     width: 100%;
     border-radius: 50%;
+    align-self: center;
 }
 .posts__curtidas__foto--link
 {
@@ -164,10 +164,13 @@ body
 {
     font-weight: 500;
     font-size: .9375em;
+    margin:0;
+    align-self: center;
 }
 .posts__curtidas__texto--selecionado
 {
     font-weight: bolder;
     text-decoration: none;
     color: black;
+    margin: 0;
 }
