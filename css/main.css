@@ -11,11 +11,12 @@
 body
 {
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(249, 246, 246);
 }
 .container
 {
     width: 100%;
-    padding: 0 .875em;
+    padding: 0 1.2em;
 }
 
 /*cabeçalho*/
@@ -41,4 +42,21 @@ body
 {
     font-size: 1.1em;
     align-self: center;
+}
+
+/*stories*/
+.stories
+{
+    display: flex;
+    padding: 5em 0 2em 0;
+}
+.stories__content
+{
+    width: 21%;
+    margin-right: 1.5em;
+}
+.stories__content__image
+{
+    border-radius: 50%;
+    width: 100%;
 }
