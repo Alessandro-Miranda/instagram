@@ -153,6 +153,7 @@ body
 .posts__curtidas__foto
 {
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     align-self: center;
 }
