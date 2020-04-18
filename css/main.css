@@ -59,6 +59,7 @@ body
 {
     border-radius: 50%;
     width: 100%;
+    height: 100%;
 }
 .stories__content--unviwed
 {
@@ -73,10 +74,6 @@ body
     display: block;
     border-radius: 50%;
     padding: 1.4%;
-    height: 100%;
-}
-.stories__content__image--unviwed
-{
     height: 100%;
 }
 /*postagens*/
