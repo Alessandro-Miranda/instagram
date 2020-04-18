@@ -60,3 +60,47 @@ body
     border-radius: 50%;
     width: 100%;
 }
+
+/*postagens*/
+.postagens
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    border: 1.4px solid rgba(0, 0, 0, .2);
+    margin-bottom: 2.875em;
+}
+.postagens__header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: .875em 1em .375em 1em;
+    height: 5.1em;
+}
+.postagens__user
+{
+    display: flex;
+}
+.postagens__userpic--link
+{
+    width: 20%;
+    margin-right: .375em;
+}
+.postagens__userpic
+{
+    width: 90%;
+    border-radius: 50%;
+}
+.postagens__username
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2em;
+    align-self: center;
+}
+.postagens__icon
+{
+    align-self: center;
+    font-size: 1.375em;    
+}
