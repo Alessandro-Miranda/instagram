@@ -60,7 +60,25 @@ body
     border-radius: 50%;
     width: 100%;
 }
-
+.stories__content--unviwed
+{
+    padding: .7%;
+    background-image: linear-gradient(to top right, #FFDC80, #FCAF45, #F77737, #F56040, #FD1D1D,
+    #E1306C, #C13584, #833AB4, #5851DB);
+    border-radius: 50%;
+}
+.stories__content--internal
+{
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    padding: 1.4%;
+    height: 100%;
+}
+.stories__content__image--unviwed
+{
+    height: 100%;
+}
 /*postagens*/
 .posts
 {
