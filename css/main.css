@@ -11,7 +11,7 @@
 body
 {
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(249, 246, 246);
+    background-color: rgb(238, 236, 236);
 }
 .container
 {
@@ -31,7 +31,7 @@ body
     padding-bottom: 3.2em;
     position: fixed;
     top: 0;
-    box-shadow: inset 0 -1.4px 0 rgba(0, 0, 0, .2);
+    border-bottom: 1.3px solid rgba(0, 0, 0, .2);
     backface-visibility: hidden;
 }
 .cabecalho__logo
@@ -48,7 +48,7 @@ body
 .stories
 {
     display: flex;
-    padding: 5em 0 2em 0;
+    padding: 5em 0 1.375em 0;
 }
 .stories__content
 {
@@ -62,7 +62,7 @@ body
 }
 
 /*postagens*/
-.postagens
+.posts
 {
     display: flex;
     flex-direction: column;
@@ -71,40 +71,88 @@ body
     border: 1.4px solid rgba(0, 0, 0, .2);
     margin-bottom: 2.875em;
 }
-.postagens__header
+.posts__header
 {
     display: flex;
     justify-content: space-between;
     padding: .875em 1em .375em 1em;
     height: 5.1em;
 }
-.postagens__user
+.posts__user
 {
     display: flex;
 }
-.postagens__userpic--link
+.posts__userpic--link
 {
     width: 20%;
     margin-right: .375em;
 }
-.postagens__userpic
+.posts__userpic
 {
     width: 90%;
     border-radius: 50%;
 }
-.postagens__username
+.posts__username
 {
     text-transform: capitalize;
     font-weight: bold;
     font-size: 1.2em;
     align-self: center;
 }
-.postagens__icon
+.posts__icon
 {
     align-self: center;
     font-size: 1.375em;    
 }
-.postagens__foto
+.posts__foto
 {
     width: 100%;
+}
+
+/*Reações*/
+.posts__reacoes
+{
+    background: white;
+    padding: .875em;
+    display: flex;
+    justify-content: space-between;
+}
+.posts__reacoes__icons
+{
+    font-size: 1.75em;
+}
+.posts__reacoes__icons:first-child
+{
+    margin-right: .875em;
+}
+
+/*comentários*/
+.posts__curtidas
+{
+    display: flex;
+    align-content: center;
+    background-color:  rgb(238, 236, 236);
+    padding: .875em .375em .375em .375em;
+    height: 5.1em;
+}
+.posts__curtidas__foto
+{
+    width: 100%;
+    border-radius: 50%;
+}
+.posts__curtidas__foto--link
+{
+    width: 15%;
+    margin-right: .575em;
+}
+.posts__curtidas__texto
+{
+    font-weight: 500;
+    font-size: .9375em;
+}
+.posts__curtidas__texto--selecionado
+{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
 }
