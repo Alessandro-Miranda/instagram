@@ -164,13 +164,12 @@ body
 {
     font-weight: 500;
     font-size: .9375em;
-    margin:0;
     align-self: center;
+    margin: 0;
 }
 .posts__curtidas__texto--selecionado
 {
     font-weight: bolder;
     text-decoration: none;
     color: black;
-    margin: 0;
 }
