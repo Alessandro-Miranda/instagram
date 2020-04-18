@@ -82,9 +82,10 @@ body
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 14px;
     border: 1.4px solid rgba(0, 0, 0, .2);
     margin-bottom: 2.875em;
+    overflow: hidden;
 }
 .posts__header
 {
