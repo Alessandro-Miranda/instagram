@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Instagram Codenation</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Instagram Clone do AceleraDEv React" />
+        <meta name="author" content="Alessandro Lima de Miranda" />
         <link rel="shortcut icon" type="image/png" href="favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
@@ -14,6 +15,7 @@
     </head>
 
     <body>
+        <!--início do cabeçalho fixo com logo do instagram e icone do direct-->
         <header>
             <div class="cabecalho container">
                 <a href="#" class="cabecalho__link">
@@ -22,9 +24,10 @@
                 <i class="far fa-paper-plane cabecalho__icon"></i>
             </div>
         </header>
-
+        <!--Fim do cabeçalho-->
         <main>
             <div class="container">
+                <!--início da seção de stories-->
                 <section class="stories">
                     <div class="stories__content">
                         <a href="#">
@@ -32,9 +35,9 @@
                                 class="stories__content__image">
                         </a>
                     </div>
-
+                    <!--stories não visualizado. Foi utilizado uma span para dar a coloração branca antes do degradê-->
                     <div class="stories__content stories__content--unviwed">
-                        <span class="stories__content--internal">
+                        <span class=" stories__content stories__content--internal">
                             <a href="#">
                                 <img src="img/profiles/gamora/gamora-profile.jpg" alt="Foto de perfil gamora"
                                     class="stories__content__image">
@@ -49,26 +52,32 @@
                         </a>
                     </div>
                 </section>
+                <!--Fim da seção de stories-->
             </div>
-
+            <!--Início da seção de publicações-->
+            <!--Pimeira publicação-->
             <div class="container">
                 <section>
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto de perfil mestre yoda"
-                                        class="posts__userpic">
+                                        class="posts__header__userpic">
                                 </a>
-                                <p class="posts__username">mestre yoda</p>
+                                <p class="posts__header__username">mestre yoda</p>
                             </div>
-
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
 
+                        <!--foto publicada-->
                         <img src="img/profiles/yoda/yoda-1.jpg" alt="Foto publicada na linha do tempo do yodinha"
                             class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -77,39 +86,49 @@
 
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/domino/domino-profile.jpg" alt="Foto de perfil domino"
                                     class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">Domino </a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">Domino </a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">7 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">7 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
+                    <!--Fim da primeira publicação-->
 
+                    <!--Segunda publicação-->
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/gamora/gamora-profile.jpg" alt="Foto de perfil gamora"
-                                        class="posts__userpic">
+                                        class="posts__header__userpic">
                                 </a>
 
-                                <p class="posts__username">gamora zen</p>
+                                <p class="posts__header__username">gamora zen</p>
                             </div>
 
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
-
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
+                        
+                        <!--foto publicada-->
                         <img src="img/profiles/gamora/gamora-1.jpg" alt="Foto publicada na linha do tempo da gamora"
                             class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -118,39 +137,49 @@
 
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/carol/carol-profile.jpg" alt="Foto de perfil da Carol"
                                     class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">Carol Danvers </a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">Carol Danvers </a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">7 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">7 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
+                    <!--Fim da segunda publicação-->
 
+                    <!--Terceira publicação-->
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/black-panther/black-panther-profile.jpg"
-                                        alt="Foto de perfil do pantera negra" class="posts__userpic">
+                                        alt="Foto de perfil do pantera negra" class="posts__header__userpic">
                                 </a>
 
-                                <p class="posts__username">T'Challa</p>
+                                <p class="posts__header__username">T'Challa</p>
                             </div>
 
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
-
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
+                        
+                        <!--foto publicada-->
                         <img src="img/profiles/black-panther/black-panther-1.jpg"
                             alt="Foto linha do tempo pantera negra" class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -159,39 +188,49 @@
 
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/bruce/bruce-profile.jpg" alt="Foto de perfil bruce wayne"
                                     class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">Bruce Wayne</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">Bruce Wayne</a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">7 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">7 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
+                    <!--Fim da terceira publicação-->
 
+                    <!--Quarta publicação-->
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/carol/carol-profile.jpg" alt="Foto de perfil carol danvers"
-                                        class="posts__userpic">
+                                        class="posts__header__userpic">
                                 </a>
 
-                                <p class="posts__username">carol danvers</p>
+                                <p class="posts__header__username">carol danvers</p>
                             </div>
 
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
-
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
+                        
+                        <!--foto publicada-->
                         <img src="img/profiles/carol/carol-1.jpg"
                             alt="Foto publicada na linha do tempo da Carol Danvers" class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -200,39 +239,49 @@
 
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto de perfil meste yoda"
                                     class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">Mestre Yoda </a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">Mestre Yoda </a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">7 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">7 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
+                    <!--Fim da quarta publicação-->
 
+                    <!--Quinta publicação-->
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/domino/domino-profile.jpg" alt="Foto de perfil da domino"
-                                        class="posts__userpic">
+                                        class="posts__header__userpic">
                                 </a>
 
-                                <p class="posts__username">domino</p>
+                                <p class="posts__header__username">domino</p>
                             </div>
 
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
-
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
+                        
+                        <!--foto publicada-->
                         <img src="img/profiles/domino/domino-1.jpg" alt="Foto publicada na linha do tempo da domino"
                             class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -241,39 +290,49 @@
 
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/black-panther/black-panther-profile.jpg"
                                     alt="Foto de perfil pantera negra" class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">T'Challa</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">T'Challa</a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">3 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">3 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
-
+                    <!--Fim da quinta publicação-->
+                    
+                    <!--Sexta publicação-->
                     <article class="posts">
+                        <!--cabeçalho contendo foto, nome de usuário e ícone-->
                         <div class="posts__header">
-                            <div class="posts__user">
-                                <a href="#" class="posts__userpic--link">
+                            <div class="posts__header__user">
+                                <a href="#" class="posts__header__userpic posts__header__userpic--link">
                                     <img src="img/profiles/bruce/bruce-profile.jpg" alt="Foto de perfil bruce wayne"
-                                        class="posts__userpic">
+                                        class="posts__header__userpic">
                                 </a>
 
-                                <p class="posts__username">bruce wayne</p>
+                                <p class="posts__header__username">bruce wayne</p>
                             </div>
 
-                            <i class="fas fa-ellipsis-h posts__icon"></i>
+                            <i class="fas fa-ellipsis-h posts__header__icon"></i>
                         </div>
-
+                        <!--Fim do cabeçalho de identificação de dono da postagem-->
+                        
+                        <!--foto publicada-->
                         <img src="img/profiles/bruce/bruce-1.jpg" alt="Foto publicada na linha do tempo do bruce"
                             class="posts__foto">
+                        <!--Fim do bloco com foto publicada-->
 
+                        <!--Bloco contendo reações de curtida, comentário e bookmark-->
                         <div class="posts__reacoes">
                             <div>
                                 <i class="far fa-heart posts__reacoes__icons"></i>
@@ -281,22 +340,27 @@
                             </div>
                             <i class="far fa-bookmark posts__reacoes__icons"></i>
                         </div>
+                        <!--fim do bloco de reações-->
 
+                        <!--bloco contendo a quantia de curtidas, foto do curtidor e ID-->
                         <div class="posts__curtidas">
-                            <a href="#" class="posts__curtidas__foto--link">
+                            <a href="#" class="posts__curtidas__foto posts__curtidas__foto--link">
                                 <img src="img/profiles/gamora/gamora-profile.jpg" alt="Foto de perfil da gamora"
                                     class="posts__curtidas__foto">
                             </a>
 
                             <p class="posts__curtidas__texto">
                                 Curtido por
-                                <a href="#" class="posts__curtidas__texto--selecionado">Gamora Zen</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">Gamora Zen</a>
                                 e outras
-                                <a href="#" class="posts__curtidas__texto--selecionado">2 pessoas</a>
+                                <a href="#" class="posts__curtidas__texto posts__curtidas__texto--selecionado">2 pessoas</a>
                             </p>
                         </div>
+                        <!--fim do bloco de curtidas-->
                     </article>
+                    <!--Fim da sexta publicação-->
                 </section>
+                <!--fim da seção de publicações-->
             </div>
         </main>
     </body>

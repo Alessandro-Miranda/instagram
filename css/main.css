@@ -78,6 +78,8 @@ body
     border-radius: 50%;
     padding: 2%;
     height: 100%;
+    width: auto;
+    margin: 0;
 }
 /*postagens*/
 .posts
@@ -97,28 +99,29 @@ body
     padding: .875em 1em .375em 1em;
     height: 5.1em;
 }
-.posts__user
+.posts__header__user
 {
     display: flex;
 }
-.posts__userpic--link
-{
-    width: 20%;
-    margin-right: .375em;
-}
-.posts__userpic
+.posts__header__userpic
 {
     width: 90%;
     border-radius: 50%;
 }
-.posts__username
+
+.posts__header__userpic--link
+{
+    width: 20%;
+    margin-right: .375em;
+}
+.posts__header__username
 {
     text-transform: capitalize;
     font-weight: bold;
     font-size: 1.2em;
     align-self: center;
 }
-.posts__icon
+.posts__header__icon
 {
     align-self: center;
     font-size: 1.375em;    
@@ -203,9 +206,9 @@ body
         height: 100%;
         width: 50%;
     }
-    .posts__userpic
+    .posts__header
     {
-        width: 80%;
+        margin-bottom: 1em;
     }
     .posts__curtidas__foto--link
     {
