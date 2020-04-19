@@ -24,19 +24,22 @@ body
 {
     background: white;
     display: flex;
-    flex-wrap: wrap;
-    height: 3.125em;
     justify-content: space-between;
     padding-top: .5em;
-    padding-bottom: 3.2em;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     border-bottom: 1.3px solid rgba(0, 0, 0, .2);
     backface-visibility: hidden;
 }
 .cabecalho__logo
 {
-    width: 45%;
+    width: 100%;
+}
+.cabecalho__link
+{
+    width: 25%;
 }
 .cabecalho__icon
 {
@@ -48,7 +51,7 @@ body
 .stories
 {
     display: flex;
-    padding: 5em 0 1.375em 0;
+    padding: 4em 0 1.375em 0;
 }
 .stories__content
 {
@@ -174,4 +177,39 @@ body
     font-weight: bolder;
     text-decoration: none;
     color: black;
+}
+@media screen and (min-width: 48.75em)
+{
+    .container
+    {
+        margin: 0 auto;
+    }
+    main .container
+    {
+        max-width: 48.75em;
+    }
+    .cabecalho
+    {
+        justify-content: space-around;
+        padding: 0 5em;
+        width: 100%;
+    }
+    .cabecalho__logo
+    {
+        width: 40%;
+    }
+    .stories
+    {
+        height: 100%;
+        width: 50%;
+    }
+    .posts__userpic
+    {
+        width: 80%;
+    }
+    .posts__curtidas__foto--link
+    {
+        width: 8%;
+        margin-right: .875em;
+    }
 }
